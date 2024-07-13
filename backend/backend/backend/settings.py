@@ -31,6 +31,12 @@ SECRET_KEY = 'django-insecure-aazd2!qr!u6havlxeg+*qv+23am*8a%9ye=dmwho+jk8%_4*(_
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",  # The URL of your React app
+]
+
+APPEND_SLASH = False
+
 
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
